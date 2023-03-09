@@ -21,9 +21,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url("../images/bg-pattern-top.svg") -15rem -30rem no-repeat,
-    url("../images/bg-pattern-bottom.svg") 40rem 30rem no-repeat,
-    hsl(185, 75%, 39%);
+  background: url("./images/bg-pattern-top.svg") -15rem -30rem no-repeat,
+    url("./images/bg-pattern-bottom.svg") 40rem 30rem no-repeat,
+    var(--dark-cyan);
 }
 
 .card {
@@ -41,7 +41,7 @@ body {
 .card__header {
   height: 30%;
   width: 100%;
-  background: url("../images/bg-pattern-card.svg") no-repeat;
+  background: url("./images/bg-pattern-card.svg") no-repeat;
 }
 
 .card img {
