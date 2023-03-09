@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+}
+
+body {
+  height: calc(100vh - 1px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/bg-pattern-top.svg") -15rem -30rem no-repeat,
+    url("../images/bg-pattern-bottom.svg") 40rem 30rem no-repeat,
+    hsl(185, 75%, 39%);
+}
+
+.card {
+  width: 350px;
+  height: 375px;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 8px 50px -5px hsl(227, 10%, 46%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.card__header {
+  height: 30%;
+  width: 100%;
+  background: url("../images/bg-pattern-card.svg") no-repeat;
+}
+
+.card img {
+  border-radius: 50%;
+  border: 5px solid white;
+  position: absolute;
+  top: 35%;
+}
+
+.card__name {
+  padding-top: 4rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.card__name span {
+  color: var(--dark-grayish-blue);
+  font-weight: normal;
+  margin-left: 0.5rem;
+}
+
+.card__location {
+  color: var(--dark-gray);
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  width: 100%;
+  padding: 0 2rem;
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  border-top: 1px solid var(--dark-gray);
+}
+
+.stats__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.stats__title {
+  font-size: 0.7rem;
+  color: var(--dark-gray);
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 325px;
+  }
+  body {
+    background: url("../images/bg-pattern-top.svg") -30rem -25rem no-repeat,
+      url("../images/bg-pattern-bottom.svg") 15rem 30rem no-repeat,
+      hsl(185, 75%, 39%);
+    background-size: 50rem, 50rem;
+  }
+}
