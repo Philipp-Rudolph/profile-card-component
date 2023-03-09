@@ -105,8 +105,8 @@ body {
     width: 325px;
   }
   body {
-    background: url("../images/bg-pattern-top.svg") -30rem -25rem no-repeat,
-      url("../images/bg-pattern-bottom.svg") 15rem 30rem no-repeat,
+    background: url("./images/bg-pattern-top.svg") -30rem -25rem no-repeat,
+      url("./images/bg-pattern-bottom.svg") 15rem 30rem no-repeat,
       hsl(185, 75%, 39%);
     background-size: 50rem, 50rem;
   }
